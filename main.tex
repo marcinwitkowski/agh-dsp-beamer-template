@@ -1,0 +1,165 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tabularx}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\graphicspath{{images/}}
+
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Short Title] %optional
+{Rulling the world with signal processing techniqes}
+
+\author[M. Witkowski, M. Rybicka, K. Kowalczyk] % (optional)
+{\\Marcin Witkowski \and Magdalena Rybicka \and Konrad Kowalczyk}
+
+\institute[AGH] % (optional)
+{\\\\
+\begin{tabular}[h]{ccc}
+    \includegraphics[height=1.4cm]{logo_DSP_wavelet_AGH.png}\;\;\;\;\;\;\;\;& 
+      \includegraphics[height=2.2cm]{agh_nzw_s_en_1w_wbr_cmyk.eps}\;\;\;\;\;\;\;\;&  
+      \includegraphics[height=1.8cm]{conf.png}%
+
+  \end{tabular} \\\\
+
+}
+
+\date[EUSIPCO 2021] % (optional)
+{ASMSP-P6: Speech Enhancement and Spoken Document Retrieval\\
+Thursday, 26 August 2021, 13:30 - 16:30 IST (UTC +01:00)\\}
+
+\logo{ \includegraphics[height=0.8cm]{logo_DSP_wavelet_AGH_short.png}
+       \includegraphics[height=0.8cm]{agh_znk_wbr_cmyk.eps}
+     }
+
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame[plain]{\titlepage}
+%\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{State-of-the-art}
+This is a text in second frame. For the sake of showing an example.
+
+\begin{itemize}
+    \item<1-> Text visible on slide 1
+    \item<2-> Text visible on slide 2
+    \item<3> Text visible on slides 3
+    \item<4-> Text visible on slide 4
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+\frametitle{Method}
+In this slide \pause
+
+the text will be partially visible \pause
+
+And finally everything will be there
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Blocks}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Systems}
+\centering
+image
+\end{frame}
+%-------------------------------------------------------
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Results}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%-------------------------------------------------------
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+\frametitle{Want more?}
+
+\centering
+Meet me at \\
+
+Session: ASMSP-P6: Speech Enhancement and Spoken Document Retrieval\\
+Session Time: Thursday, 26 August, 13:30 - 16:30 IST (UTC +01:00)\\
+or\\
+witkow@agh.edu.pl
+
+\end{frame}
+%---------------------------------------------------------
+
+\end{document}
